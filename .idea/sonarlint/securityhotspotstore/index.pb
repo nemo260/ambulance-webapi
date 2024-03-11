@@ -24,3 +24,7 @@ b
 2internal/ambulance_wl/impl_ambulance_conditions.go,e\d\edc6e81011d1ff15764f240cdef5f983ec956b30
 d
 4internal/ambulance_wl/impl_ambulance_waiting_list.go,5\3\53df056481dff1b1b7464427ad46dff7e9529fbf
+W
+'deployments/docker-compose/compose.yaml,1\3\138616c9653b853fa0847e063eb0b62146cbbd32
+O
+deployments/docker-compose/.env,5\f\5f6c78196948adfa97003ed0a8d549910f535d99
