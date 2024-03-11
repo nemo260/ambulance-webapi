@@ -42,3 +42,5 @@ P
 0internal/ambulance_wl/utils_ambulance_updater.go,7\4\7454c75b46a5582575ef259d6eb1fa426d2c5e6e
 \
 ,internal/ambulance_wl/ext_model_ambulance.go,f\1\f1d7b116fdef83fa0c3c28a367e1e3edb3035cb3
+i
+9internal/ambulance_wl/impl_ambulance_waiting_list_test.go,e\5\e56217f924f1d97bc85198e3a5f693d7cb366920
