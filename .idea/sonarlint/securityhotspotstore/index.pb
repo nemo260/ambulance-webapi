@@ -28,3 +28,17 @@ W
 'deployments/docker-compose/compose.yaml,1\3\138616c9653b853fa0847e063eb0b62146cbbd32
 O
 deployments/docker-compose/.env,5\f\5f6c78196948adfa97003ed0a8d549910f535d99
+W
+'internal/ambulance_wl/api_ambulances.go,b\8\b822f4da274fa2fa52aea08006e03be17e045774
+X
+(internal/ambulance_wl/impl_ambulances.go,5\5\553ef91baed3e3016acd004bc95d216b82d30ec7
+X
+(internal/ambulance_wl/model_condition.go,1\6\16f9ffda1c08f4215b641c52278b6684385ed6dc
+O
+internal/db_service/mongo_svc.g,d\0\d078e06200a02170e84cbfabd3528f4314717a72
+P
+ internal/db_service/mongo_svc.go,e\e\ee4121bc2791b6baa5a326ba7dfc7d468e0a8cae
+`
+0internal/ambulance_wl/utils_ambulance_updater.go,7\4\7454c75b46a5582575ef259d6eb1fa426d2c5e6e
+\
+,internal/ambulance_wl/ext_model_ambulance.go,f\1\f1d7b116fdef83fa0c3c28a367e1e3edb3035cb3
