@@ -21,8 +21,17 @@ type AmbulanceConditionsAPI interface {
    // internal registration of api routes
    addRoutes(routerGroup *gin.RouterGroup)
 
+    // AddConditions - Adds predefined conditions
+   AddConditions(ctx *gin.Context)
+
+    // DeleteConditions - Deletes all predefined conditions
+   DeleteConditions(ctx *gin.Context)
+
     // GetConditions - Provides the list of conditions associated with ambulance
    GetConditions(ctx *gin.Context)
+
+    // UpdateConditions - Updates predefined conditions
+   UpdateConditions(ctx *gin.Context)
 
  }
 
@@ -36,12 +45,30 @@ type AmbulanceConditionsAPI interface {
  }
 
  func (this *implAmbulanceConditionsAPI) addRoutes(routerGroup *gin.RouterGroup) {
+   routerGroup.Handle( http.MethodPost, "/waiting-list/:ambulanceId/condition", this.AddConditions)
+   routerGroup.Handle( http.MethodDelete, "/waiting-list/:ambulanceId/condition", this.DeleteConditions)
    routerGroup.Handle( http.MethodGet, "/waiting-list/:ambulanceId/condition", this.GetConditions)
+   routerGroup.Handle( http.MethodPut, "/waiting-list/:ambulanceId/condition", this.UpdateConditions)
  }
 
  // Copy following section to separate file, uncomment, and implement accordingly
+ // // AddConditions - Adds predefined conditions
+ // func (this *implAmbulanceConditionsAPI) AddConditions(ctx *gin.Context) {
+ //  	ctx.AbortWithStatus(http.StatusNotImplemented)
+ // }
+ //
+ // // DeleteConditions - Deletes all predefined conditions
+ // func (this *implAmbulanceConditionsAPI) DeleteConditions(ctx *gin.Context) {
+ //  	ctx.AbortWithStatus(http.StatusNotImplemented)
+ // }
+ //
  // // GetConditions - Provides the list of conditions associated with ambulance
  // func (this *implAmbulanceConditionsAPI) GetConditions(ctx *gin.Context) {
+ //  	ctx.AbortWithStatus(http.StatusNotImplemented)
+ // }
+ //
+ // // UpdateConditions - Updates predefined conditions
+ // func (this *implAmbulanceConditionsAPI) UpdateConditions(ctx *gin.Context) {
  //  	ctx.AbortWithStatus(http.StatusNotImplemented)
  // }
  //
